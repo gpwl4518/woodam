@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+
+/*include 헤더~푸터~*/
+
+
+#wrap{}
+#header{
+    width: 100%;
+    background: #fff;
+    z-index: 10000;
+    position:fixed;
+    left: 0;
+    top: 0;
+}
+#header h1{
+    float: left;
+    padding: 0 80px;
+    height: 110px;
+    line-height: 110px;
+}
+#header h1 a{}
+#header h1 a img{
+    margin: -14px;
+}
+
+.gnb{
+}
+.gnb li{
+    height: 110px;
+    line-height: 110px;
+    float: left;
+    font-size:17px;
+    padding:0 30px;
+    font-weight: 400;
+    position: relative;
+}
+.gnb li a{
+    color: #434343;
+}
+
+/*
+/*퀵버튼*/
+
+.preView{
+    position: absolute;
+    right: 0;
+}
+.preView li{
+    float: right;
+    height: 50px;
+    line-height:50px;
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 26px;
+    
+}
+.preView li a{
+    color: #C2C2C2;
+    font-weight: 200;
+    font-size: 13px;
+    display: block;
+}
+.con_1{
+    background:#fff url(../images/sub/btn_link1_off.png) no-repeat 25px 20px;
+    
+}
+.con_1:hover{
+    background:#fff url(../images/sub/btn_link1_on.png) no-repeat 25px 20px;
+    
+}
+
+.con_2{
+    background:#fff url(../images/sub/btn_link2_off.png) no-repeat 25px 20px;
+    
+}
+
+.con_2:hover{
+    background:#fff url(../images/sub/btn_link2_on.png) no-repeat 25px 20px;
+    
+}
+.preView li:hover a{
+    color:#F47A20;
+}
+
+/*퀵버튼*/
+
+.lnb{
+    position: absolute;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    text-indent: 6px;
+    text-align: left;
+    
+}
+.lnb li a{
+    color: #848484;
+}
+.lnb li{
+    width: 100%;
+    line-height: 35px;
+    height: auto;
+    background: #fff;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.lnb li:after{/*선준거 세트*/
+    display: block;
+    content: "";
+    height: 1px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #e4e4e4;;
+}
+
+.lnb li:last-child:after{
+    display: none;
+}
+
+.lnb a:hover{
+    color:#F47A20;
+}
+
+   
+.gnb li:hover .lnb{/*tip.여기서 .gnb li왼쪽은 마우스 올려야되는 대상이고 a는 오른쪽은 바뀌어야하는 대상*/
+    /* display:block;   2.안보이는거 보이게 해주는거*/
+    max-height:1500px;/*메뉴끝까지 나오기위해서 세로를 최대치로~^^*/
+ 
+    transition:max-height 1s;/*lnb에다가 이걸넣으면 되긴하는데 애매하게 됨*/
+}
+
+.gnb>li:hover{/*> ul li이런거 여러개있을떄 gnb의 첫번쨰 자식 li에게만 주는것!!*/
+    border-bottom:4px solid #F47A20;
+    box-sizing: border-box;
+}
+
+
+/*lnb*/
+
+/*푸터*/
+
+#footer{
+    overflow: hidden;
+}
+.footerTop{
+    border-top:  1px solid #000;
+    
+}
+
+.footerTopleft{
+    width: 49.97%;
+    background: #fff;
+    height: 82px;
+    line-height: 82px;
+    float: left;
+}
+
+.footerTopleft:first-child{
+    border-right:  1px solid #e4e4e4;
+}
+
+.footerTopleft li{
+    font-size: 15px;
+    float: left;
+}
+.footerTopleft li img{
+    margin-left:30px;
+}
+.footerTopleft li a{
+    font-size: 14px;
+    color:#747678;;
+}
+
+
+.footerToptext:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: #E2E0E3;
+    margin: -2px 20px;
+    
+}
+
+.fSolid{
+   width: 200px;
+   border-right: 1px solid #e3e1e4;
+    float: left;
+}
+
+.footerBottom{
+    width:100%;
+    height: 250px;
+    background: #F3F1F4;
+    padding: 60px;
+}
+.footerBotleft{
+}
+.fbText1{    
+    font-size: 18px;
+    color: #6c6c6c;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+.fbText2{
+    font-size: 22px;
+    line-height: 26px;
+    color: #2c2c2c;
+}
+.fbText3{
+    padding-top: 20px;
+    font-size: 22px;
+}
+.fbText4{
+    font-size: 34px;
+    line-height: 35px;
+    color: #2c2c2c;
+}
+.fbText5{
+    font-size: 14px;
+    line-height: 14px;
+    color: #6c6c6c;
+    font-weight: 200;
+    letter-spacing:1px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+   
+}
+
+.footerBotleft ul{}
+.footerBotleft ul li{
+}
+
+.footerIco{
+    width: 30px;
+    height: 30px;
+    float: left;
+    background:#343235  url(../images/sub/ico_cscenter_1.png) no-repeat;
+    text-indent: -9999px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.fIco1{
+}
+.fIco2{
+    background-image:url(../images/sub/ico_cscenter_2.png)
+}
+.fIco3{
+    background-image:url(../images/sub/ico_cscenter_3.png)}
+.fIco4{
+    background-image:url(../images/sub/ico_cscenter_4.png)}
+
+.footerIco a{
+    display: block;
+}
+
+
+
+
+.footerBotright{    padding-left:290px;
+}
+.mainCon1bigbox{
+}
+.footerBotright .mainCon1bigbox .con1Text ul:nth-child(1){
+    float: left;
+}
+
+.footerBotright .mainCon1bigbox h4:nth-child(1){
+    float: left;
+}
+
+
+
+.footerBotright .mainCon1bigbox .con1Text .Text_1 .Text_1mini1{
+    background-color: #F3F1F4;
+    
+}
+
+
+.Text_1mini1 {
+    width: 90px;
+    background-color: #fff;
+    color: #2C2C2C;
+    vertical-align: middle;
+}
+
+.Text_2 li{
+    float: left;
+    padding-bottom: 60px;
+    margin-right: 20px;
+    height: 20px;
+    line-height:20px;
+}
+
+.Text2_1{
+    font-size: 20px;
+    color: #2c2c2c;
+}
+.Text_2 span{
+    color: #000;
+}
+
+.Text2_2{
+    font-size: 14px;
+    color: #6c6c6c;
+    
+}
+
+.Text_2 .Text2_2{
+    margin-right: 10px;
+}
+
+.Text2_3{
+    font-size: 14px;
+    color: #6c6c6c;
+}
+
+.Text2_3 p{
+    color: #e3e1e4;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+
+.footerBottom2{
+    border-top:1px solid #e3e1e4;
+    height: 42px;
+    line-height: 42px;
+    background-color: #F3F1F4;
+}
+.fBottom2{
+    float: right;
+}
+.fB2_img1{    
+    padding-right: 42px;
+}
+.fB2_img2{
+    background-color: #343235;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.fBottom2 li{
+    float: left;
+    height: 42px;
+}
+
+.fBsite{
+}
+.fBsite a{
+    color: #7e7e7e;
+    font-size: 14px;
+    padding-right: 50px;
+    
+}

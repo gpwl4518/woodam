@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+
+/*sub-회사소개*/
+
+#container{
+    padding-top:110px;
+}
+
+.mainSlider{
+    height: 534px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}  
+.mainImg img{
+    position: absolute;/*★메인 중앙에오게하는조건*/
+    left:50%;/*★메인 중앙에오게하는조건*/
+    margin-left:-1000px;/*★메인 중앙에오게하는조건 */
+    
+}  
+
+
+.con_1{
+}
+.con_2{}
+
+
+
+
+.comPany{
+    position: absolute;
+    top:95px;
+    left: 50%;
+    margin-left: -185px;
+    text-align: center;
+    width: 370px;
+    height: 44px;
+    line-height: 44px;
+    background: url(../images/sub/bracket_title.png) no-repeat ;
+    color:rgba(255,255,255,0.7);
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-weight: 200;
+}
+
+.mainText{
+    position: absolute;
+    top:0;
+    color:#fff;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 20px;
+    left: 50%;
+    margin-left:-270px;
+    top:150px;
+    text-shadow:2px 2px 2px  rgba(0,0,0,0.3);
+    
+}
+.mainText p{
+    font-size: 56px;
+}
+.mainText p span{
+    color:#f47a20;
+    border-bottom: 1px  #f47a20 solid;
+}
+
+
+
+.subNav{
+    position: absolute;
+    top:-60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 1200px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.subNav li{
+    float: left;
+    border-right:1px solid #e4e4e4;
+    position: relative;
+}
+.subNav li:first-child{
+    border-right:0;
+    border-bottom:0;
+}
+
+.subNav .icoHome{
+    padding: 0;
+}
+
+
+.subNav .icoHome2{
+    background: url(../images/sub/ar_snb.png) no-repeat 135px 2px;
+    width: 200px;
+    padding-left: 30px;
+    
+}
+.subNav li img{
+    background-color:#F47A20;
+    height: 60px;
+}
+.icoMenu1{
+    
+}
+.icoHome3{
+    padding: 0 30px;
+}
+.icoHome2 a{
+    display: block;    
+}
+
+.icoHome2{
+    
+}
+.navMenu{
+    position: absolute;
+    z-index: 10;
+}
+.navMenu li{ 
+    width: 100%;
+    height: auto;
+    line-height: 35px;
+    background: #fff;
+}
+
+
+
+
+.mainCon1{
+    position: relative;
+    height: 840px;
+}
+.mainCon1bigbox{
+    position: absolute;
+    z-index: 1000;
+}
+
+.mainCon1 h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 60px 0;
+      margin-bottom: 40px;
+    letter-spacing: -0.5px;
+}
+.mainCon1 h2 span{
+    border-top:2px solid #000;
+  
+}
+.mainCon1 h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.con1Text{}
+.Text_1{
+    font-size: 13px;
+    margin-bottom:15px;
+    font-weight: 300;
+    
+}
+.Text_1 li{
+    float: left;
+}
+.Text_1mini1{
+    width: 90px;
+    background-color: #fff;
+    color:#2C2C2C;
+    vertical-align: middle;
+}
+
+.Text_1mini1:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #E2E0E3;
+    margin: 4px 5px;
+    float: right;
+    vertical-align: middle;
+}
+
+
+.Text_1 .Text_1mini2{
+    color:#747678;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.con1Text2 a{
+    border:1px solid #E2E0E3;
+    text-align: center;
+    width:120px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: 200;
+    background: url(../images/sub/bg_sendemail.png) no-repeat 11px 1px;
+}
+.con1Text2 a{
+    font-size: 12px;
+    display: block;
+    color:gray;
+}
+
+.con1Text2:hover a{
+    border:1px solid #000;
+    color:#000; 
+    background-image: url(../images/sub/bg_sendemail2.png);
+    transition: all 0.5s;
+}
+
+
+
+.con1Text3{
+    background: url(../images/sub/bg_introduction_info.png) no-repeat;
+    height: 695px;
+    position: absolute;
+    top:150px;
+    width: 100%;
+}
+
+.con1Text3Box{
+    margin-top: 365px;
+    margin-left: 70px;
+}
+
+.con1Text3 span{
+    font-size: 25px;
+    color: #fff;
+}
+
+.con1Text3 p{
+    margin-top: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color:#949494;
+    
+}
+.mainCon2{}
+
+.con1Title{
+    margin-top: 80px;
+    vertical-align: middle;
+}
+.con1Title p{
+    float: left;
+    font-size: 20px;
+    color:#2c2c2c;
+
+}
+.con1Title p:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: #E2E0E3;
+    margin: 7px 14px;
+    float: right;
+    vertical-align: middle;
+    
+}
+
+.con1Title span{
+    font-size: 14px;
+    color: #747678;
+    font-weight: 300;
+}
+
+
+.con1Ico{
+    width: 100%;
+    margin-top: 30px;
+}
+.icoBox1{
+    float: left;
+    margin: 0 40px;
+}
+.icoBox1 li{}
+.icoBox1 li img{}
+
+.box1Text{
+    font-size: 14px;
+    color:#303030;
+    text-align: center;
+    margin-bottom: 80px;
+    
+}
+
+
+.con3Bigbox{
+    padding-bottom: 100px;}
+
+.con3Box{
+    float: left;
+    padding-top: 40px;
+}
+.con3Box li{
+    font-size: 13px;
+    color:#303030;
+    padding-top: 15px;
+    padding-right: 50px;
+}
+.con3Box li img{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/*기본css*/
+
+body{
+    font-family: 'NotoSans', sans-serif;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.inner{
+    width:1200px;
+    margin:0 auto;
+}
+
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/****default 기본 메인,이너,cf등등~~~~******/
+
